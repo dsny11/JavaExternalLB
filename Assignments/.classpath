@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="Classes_Objects_MethodsAndStrings"/>
+	<classpathentry kind="src" path="ControlStatements_Part_1"/>
+	<classpathentry kind="src" path="ControlStatements_Part_2"/>
+	<classpathentry kind="src" path="Methods"/>
+	<classpathentry kind="src" path="Arrays_And_ArrayLists"/>
+	<classpathentry kind="src" path="classesAndObjects"/>
+	<classpathentry kind="src" path="OOP_inheritance"/>
+	<classpathentry kind="src" path="OOP_Polymorphism"/>
+	<classpathentry kind="src" path="Exception_Handling"/>
+	<classpathentry kind="src" path="String_Char_RegEx"/>
+	<classpathentry kind="src" path="Serialization"/>
+	<classpathentry kind="src" path="Generic_Collections"/>
+	<classpathentry kind="src" path="GenericClasses_And_Methods"/>
+	<classpathentry kind="src" path="Custom_Generic_Data_Structures"/>
+	<classpathentry kind="src" path="JDBC"/>
+	<classpathentry kind="lib" path="C:/Program Files/sqljdbc_8.4.1.0_enu/sqljdbc_8.4/enu/mssql-jdbc-8.4.1.jre8.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
