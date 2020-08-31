@@ -98,8 +98,9 @@ public class EmployeeDB {
 	            PreparedStatement stmt = connection.prepareStatement("insert into MonthlySalary ("
 	            		+ "Date,"
 	            		+ "EmployeeID, "
-	            		+ "SalaryAmount) values ( "
-	            		+ "getdate(),?, ? )");
+	            		+ "SalaryAmount, "
+	            		+ "BonusAmount) values ( "
+	            		+ "getdate(),?, ?,0 )");
 	            
 	            Iterator<Entry<Integer, Double>> it = myMap.entrySet().iterator();
 	            
@@ -201,7 +202,7 @@ public class EmployeeDB {
 	            	throw new SQLException ("No Employees have their DOB this month!");
 	            }
 	            
-	            PreparedStatement stmt = connection.prepareStatement("Update MonthlySalary set BonusAmount = "+bonus+" where ID =  ?");
+	            PreparedStatement stmt = connection.prepareStatement("Update MonthlySalary set BonusAmount = BonusAmount + "+bonus+" where ID =  ?");
 	            		
 	            
 	            ListIterator <Integer> it = myList.listIterator();
@@ -266,7 +267,7 @@ public class EmployeeDB {
 	            	throw new SQLException ("No Employees found for processing bonus");
 	            }
 	            
-	            PreparedStatement stmt = connection.prepareStatement("Update MonthlySalary set BonusAmount = "+bonus+" where ID =  ?");
+	            PreparedStatement stmt = connection.prepareStatement("Update MonthlySalary set BonusAmount = BonusAmount + "+bonus+" where ID =  ?");
 	            		
 	            
 	            ListIterator <Integer> it = myList.listIterator();
