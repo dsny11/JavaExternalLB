@@ -47,12 +47,10 @@ public class TestEmployeeData {
 				System.out.println("Enter 5 to Choose GrossMarginCommission");
 				employeeType = getEmployeeType(s.nextInt());
 				System.out.println("Enter Sales Threhold : ");
-				salesThrehold = s.nextDouble();		
-				EmployeeDB.processSalary();
+				salesThrehold = s.nextDouble();				
 				EmployeeDB.processTypeAndSalesBonus(employeeType, salesThrehold);
 				break;
-			case "4":
-				EmployeeDB.processSalary();
+			case "4":				
 				EmployeeDB.processDOBBonus();
 				
 				break;
